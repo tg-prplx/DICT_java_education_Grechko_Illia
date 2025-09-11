@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="C:\Program Files\Zulu\zulu-8" version="1.8.0_462">
+        <bootpath>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\lib\resources.jar"/>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\lib\rt.jar"/>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\lib\sunrsasign.jar"/>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\lib\jsse.jar"/>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\lib\jce.jar"/>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\lib\charsets.jar"/>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\lib\jfr.jar"/>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\lib\cat.jar"/>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\Program Files\Zulu\zulu-8\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Program Files\Zulu\zulu-21" version="21.0.8"/>
+    <libraryInfo home="C:\Users\Admin2\.config\lite-xl\libraries\jdk\jdk-24.0.2" version="24.0.2"/>
+</libraryInfos>
