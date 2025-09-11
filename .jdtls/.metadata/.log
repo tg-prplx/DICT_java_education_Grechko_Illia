@@ -1,0 +1,164 @@
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-11 11:45:21.025
+!MESSAGE Parent process stopped running, forcing server exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-11 11:45:21.025
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.launching 4 4 2025-09-11 11:45:21.030
+!MESSAGE Системе не удается найти указанный путь
+!STACK 0
+java.io.IOException: Системе не удается найти указанный путь
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:530)
+	at java.base/java.io.File.createNewFile(File.java:949)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin.writeInstallInfo(LaunchingPlugin.java:1110)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$1$1.saving(LaunchingPlugin.java:584)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:466)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:271)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:274)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1284)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2549)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2538)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer$1.run(JDTLanguageServer.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2025-09-11 11:45:21.031
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems while saving variables and containers
+	at org.eclipse.jdt.internal.core.JavaModelManager.saveVariablesAndContainers(JavaModelManager.java:4465)
+	at org.eclipse.jdt.internal.core.JavaModelManager.savingTimed(JavaModelManager.java:4730)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saving(JavaModelManager.java:4716)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:466)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:271)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:274)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1284)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2549)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2538)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer$1.run(JDTLanguageServer.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: C:\Users\Admin2\idk\.jdtls\.metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat (Системе не удается найти указанный путь)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:255)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:210)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saveVariablesAndContainers(JavaModelManager.java:4460)
+	... 11 more
+!SUBENTRY 1 org.eclipse.jdt.core 4 4 2025-09-11 11:45:21.031
+!MESSAGE Problems while saving variables and containers
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Admin2\idk\.jdtls\.metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat (Системе не удается найти указанный путь)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:255)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:210)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saveVariablesAndContainers(JavaModelManager.java:4460)
+	at org.eclipse.jdt.internal.core.JavaModelManager.savingTimed(JavaModelManager.java:4730)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saving(JavaModelManager.java:4716)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:466)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:271)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:274)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1284)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2549)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2538)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer$1.run(JDTLanguageServer.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 4 2025-09-11 11:45:21.031
+!MESSAGE Problems while saving variables and containers
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Admin2\idk\.jdtls\.metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat (Системе не удается найти указанный путь)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:255)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:210)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saveVariablesAndContainers(JavaModelManager.java:4460)
+	at org.eclipse.jdt.internal.core.JavaModelManager.savingTimed(JavaModelManager.java:4730)
+	at org.eclipse.jdt.internal.core.JavaModelManager.saving(JavaModelManager.java:4716)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:466)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:271)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:274)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1284)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2549)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2538)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer$1.run(JDTLanguageServer.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2025-09-11 11:45:21.037
+!MESSAGE Could not write workspace metadata 'C:/Users/Admin2/idk/.jdtls/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/)[568]: java.io.FileNotFoundException: C:\Users\Admin2\idk\.jdtls\.metadata\.plugins\org.eclipse.core.resources\.root\1.tree (Системе не удается найти указанный путь)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:255)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:210)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1491)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1288)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2549)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2538)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer$1.run(JDTLanguageServer.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2025-09-11 11:45:21.038
+!MESSAGE Could not write workspace metadata 'C:/Users/Admin2/idk/.jdtls/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Admin2\idk\.jdtls\.metadata\.plugins\org.eclipse.core.resources\.root\1.tree (Системе не удается найти указанный путь)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:255)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:210)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1491)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1288)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2549)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2538)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer$1.run(JDTLanguageServer.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-11 11:45:21.040
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2025-09-11 11:45:21.045
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+
+!ENTRY org.eclipse.jdt.core 4 4 2025-09-11 11:45:21.070
+!MESSAGE Failed to save JDT index: Index for /jdt.ls-java-project
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Admin2\idk\.jdtls\.metadata\.plugins\org.eclipse.jdt.core\2238567309.index (Системе не удается найти указанный путь)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:185)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
+	at org.eclipse.jdt.internal.core.index.FileIndexLocation.getInputStream(FileIndexLocation.java:83)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readAllDocumentNames(DiskIndex.java:633)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:536)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:229)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndex(IndexManager.java:1135)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1178)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:822)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:508)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+!ENTRY org.eclipse.jdt.core 4 0 2025-09-11 11:45:21.071
+!MESSAGE Failed to update qualified index.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Admin2\idk\.jdtls\.metadata\.plugins\org.eclipse.jdt.core\1865797976.index (Системе не удается найти указанный путь)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:185)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
+	at org.eclipse.jdt.internal.core.index.FileIndexLocation.getInputStream(FileIndexLocation.java:83)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readAllDocumentNames(DiskIndex.java:633)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:536)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:229)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:98)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1227)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1203)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:822)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:508)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-09-11 11:45:21.575
+!MESSAGE The workspace will exit with unsaved changes in this session.
