@@ -5,11 +5,19 @@ import java.util.*;
 public class hangman {
     public static void main(String[] args) {
         System.out.println("HANGMAN");
-        play();
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            System.out.print("Type \"play\" to play the game, \"exit\" to quit: ");
+            String cmd = sc.nextLine().trim();
+            if ("play".equals(cmd)) {
+                play(sc);
+            } else if ("exit".equals(cmd)) {
+                break;
+            }
+        }
     }
 
-    static void play() {
-        Scanner sc = new Scanner(System.in);
+    static void play(Scanner sc) {
         List<String> words = Arrays.asList("python", "java", "javascript", "kotlin");
         String answer = words.get(new Random().nextInt(words.size()));
         char[] mask = new char[answer.length()];
@@ -46,8 +54,6 @@ public class hangman {
             if (!inWord) {
                 System.out.println("That letter doesn't appear in the word");
                 lives--;
-            } else if (!improved) {
-                System.out.println("No improvements");
             }
         }
         if ((new String(mask)).equals(answer)) {
